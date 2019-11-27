@@ -47,7 +47,7 @@ section {
 #volkslied {
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 /*#endregion*/
@@ -106,14 +106,14 @@ nav a:hover {
 }
 
 #maps {
-  margin: -5% 2% 8% 0;
+  margin: 0 2% 5% 0;
   border-radius: 5%;
 }
 
 #overItalië {
   padding: 100px 20px 20px 20px;
   background: rgba(0, 0, 0, 0.8);
-  margin: -5% 2% 5% 0;
+  margin: 0 2% 5% 0;
   border-radius: 5%;
   width: 560px;
   height: 330px;
@@ -170,7 +170,7 @@ section h2 {
 /*#region volkslied*/
 
 #volkslied {
-  background-image: url("../img/Background.jpg");
+  background-image: url("../img/FolkBackground.jpg");
 }
 
 #lyrics {
