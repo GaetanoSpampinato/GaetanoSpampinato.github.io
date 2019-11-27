@@ -4,141 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./CSS/mainstyle.css" />
-    <link rel="icon" href="./Images/FAVICON.ico" type="image/x-icon" />
-    <title>Home Page</title>
+    <link rel="stylesheet" href="./CSS/stylesheet.css" />
+    <link rel="icon" href="./img/FAVICON.ICO" type="image/x-icon" />
+    <title>Italië</title>
   </head>
+
   <body>
-    <div class="navigatie">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./Hobbys/Hobbys.html">Hobbys</a></li>
-        <li><a href="./Opleiding/GraduaatNetwerkbeheer.html">Opleiding</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <p>
-        <img
-          id="profielFoto"
-          src="./Images/Lobke&Gaetano.JPG"
-          alt="Foto van Lobke & Gaetano"
-        />
-      </p>
-
-      <h1>Gaetano Spampinato</h1>
-
-      <p>
-        Ik ben geboren te
-        <a
-          target="_blank"
-          href="https://www.google.com/maps/place/Mons/@50.445754,3.8996656,12z/data=!3m1!4b1!4m5!3m4!1s0x47c24558a6578cfb:0x40099ab2f4d6c90!8m2!3d50.4542408!4d3.956659"
-          ><b>Bergen</b></a
-        >
-        op <cite>07/02/1994</cite>. <br />
-        Mijn moeder is afkomstig uit
-        <a
-          target="_blank"
-          href="https://www.google.com/maps/place/Paris,+France/data=!4m2!3m1!1s0x47e66e1f06e2b70f:0x40b82c3688c9460?sa=X&ved=2ahUKEwibuM6A3o_lAhXP0KQKHVOxDBIQ8gEwAHoECAoQAQ"
-          ><b>Frankrijk</b></a
-        >
-        en mijn vader uit
-        <a
-          target="_blank"
-          href="https://www.google.com/maps/place/94100+Enna,+Province+of+Enna,+Italy/@37.5581087,14.2753022,15z/data=!3m1!4b1!4m5!3m4!1s0x1310d882b24c6f41:0x81dec0af212c847!8m2!3d37.5676498!4d14.2798573"
-          ><b>Sicilië</b></a
-        >.
-      </p>
-      <p>
-        Vorig jaar op <cite>29/09/2018</cite> stapte ik in het huwelijk met mijn
-        vrouw Lobke.
-      </p>
-      <p>Tijdens mijn middelbare onderwijs studeerde ik handel.</p>
-      <p>
-        Ik werk nu als <cite>System & Network Engineer</cite> bij de
-        <a target="_blank" href="https://www.cm.be/"
-          ><b>Christelijke Mutualiteit</b></a
-        >, dit was niet altijd het geval!
-      </p>
-      <p>
-        Na mijn middelbaar schreef ik mij in bij Howest voor de opleiding
-        Financiën en verzekeringen. <br />
-        Deze opleiding heb ik destijds jammer genoeg maar 3 maanden gevolgd.
-        <br />
-        Toen kreeg ik de opportuniteit om te beginnen als zelfstandig
-        restaurateur, Uiteraard greep ik mijn kans. <br />
-        Tot april 2018 heb ik een succesvolle zaak uitgebaat in het centrum van
-        Brugge.
-      </p>
-
-      <div class="tabel">
-        <a href="./Hobbys/Aquarium.html"
-          ><img
-            src="./Images/Aquarium.jpg"
-            alt="Foto van Aquarium 500L"
-            id="fotoAquarium"
-        /></a>
-        <p>
-          Zoals je zal zien op één van de pagina's op deze site ben ik heel druk
-          bezig met mijn zeewater aquarium. Ondertussen ben ik al <br />
-          7 jaar bezig met de hobby en heb ik eindelijk een mooi exemplaar van
-          500L staan.
-        </p>
+    <div id="grid-container">
+      <header id="top-nav">
+        <img src="./img/ItalianFlag.jpeg" alt="Italian Flag" id="italianFlag" />
+        <h1 id="hoofding">Italië</h1>
+      </header>
+      <div id="bottom-nav">
+        <nav>
+          <ul>
+            <li><a href="#" id="huidigePagina">Home</a></li>
+            <li><a href="./steden.html" id="">Steden</a></li>
+            <li><a href="./volkslied.html">Volkslied</a></li>
+          </ul>
+        </nav>
       </div>
+      <section id="homePage">
+        <div id="flex-container">
+          <iframe
+            id="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12344878.428305836!2d3.7241571053141707!3d40.94015826668297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2sItaly!5e0!3m2!1sen!2sbe!4v1574883251146!5m2!1sen!2sbe"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+          ></iframe>
 
-      <div class="tabel">
-        <a href="./Hobbys/Gaming.html"
-          ><img
-            src="./Images/WorldofWarcraft.png"
-            alt="World of Warcraft logo"
-            id="logoWoW"
-        /></a>
-        <p>
-          Al 14 jaar een fervente speler van <br />
-          <a target="_blank" href="https://worldofwarcraft.com/en-us/"
-            ><b>World of Warcraft</b></a
-          >. Buiten WoW speel ik nog een tal van andere games uit alle genres.
-        </p>
-      </div>
-
-      <div class="tabel">
-        <a href="./Hobbys/Gezelschapspelen.html"
-          ><img
-            src="./Images/T.I.M.E.Stories.jpg"
-            alt="T.I.M.E. Stories bordspel"
-            id="bordspel"
-        /></a>
-        <p>
-          Zeer graag speel ik gezelschapspelen. <br />
-          Maar mijn twee lievelings zijn <br />
-          <a
-            target="_blank"
-            href="https://www.spacecowboys.fr/time-stories-english"
-            ><b>T.I.M.E. Stories</b></a
-          >
-          en
-          <a
-            target="_blank"
-            href="https://www.fantasyflightgames.com/en/products/mansions-of-madness-second-edition/"
-            ><b>Mansion of Madness</b></a
-          >.
-        </p>
-      </div>
-
-      <p>
-        Ik zal hier niet meer over uitwijken, maar zal ik jou uitnodigen om op
-        de verschillende pagina's van mijn site rond te neuzen!
-      </p>
-    </div>
-
-    <div class="footer">
-      <p>
-        <small>
-          &copy; Spampinato Gaetano <br />
-          2018 - 2019
-        </small>
-      </p>
-      <a href="#"><img id="top" src="/Images/BacktoTop.png" alt=""/></a>
+          <article id="overItalië">
+            Een groot deel van het vasteland van Italië is gelegen op het
+            Apennijns Schiereiland en wordt omgeven door water. Vanwege de
+            langgerekte vorm wordt het land ook wel "de laars" genoemd. Op een
+            grondgebied van ruim 300.000 km² wonen 62.137.802 (2017) Italianen.
+            De hoofdstad van het land is Rome (Roma). De onafhankelijke staten
+            Vaticaanstad, waarvan de paus het hoofd is, en San Marino zijn twee
+            enclaves binnen de Italiaanse grenzen. Campione d'Italia is dan weer
+            een Italiaanse exclave in Zwitserland.
+          </article>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; Gaetano Spampinato</p>
+      </footer>
     </div>
   </body>
 </html>
