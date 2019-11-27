@@ -106,7 +106,7 @@ nav a:hover {
 }
 
 #maps {
-  margin: -5% 2% 0 0;
+  margin: -5% 2% 8% 0;
   border-radius: 5%;
 }
 
@@ -115,7 +115,7 @@ nav a:hover {
   background: rgba(0, 0, 0, 0.8);
   margin: -5% 2% 5% 0;
   border-radius: 5%;
-  width: 600px;
+  width: 560px;
   height: 330px;
   color: whitesmoke;
   font-size: 20px;
