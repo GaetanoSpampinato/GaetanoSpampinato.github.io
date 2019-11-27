@@ -97,7 +97,7 @@ nav a:hover {
   color: whitesmoke;
 }
 
-/*#endregion Navigatie*/
+/*#endregion*/
 
 /*#region Index*/
 
@@ -176,6 +176,7 @@ section h2 {
 #lyrics {
   padding-top: 20px;
   background: rgba(0, 0, 0, 0.6);
+  margin-bottom: 5%;
   text-align: center;
   width: 300px;
   height: 295px;
