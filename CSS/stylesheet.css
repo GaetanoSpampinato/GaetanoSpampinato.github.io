@@ -129,7 +129,7 @@ nav a:hover {
 #steden {
   background-size: cover;
   background-attachment: fixed;
-  background: url("../img/StedenBackground.jpg");
+  background-image: url("../img/StedenBackground.jpg");
 }
 
 a {
