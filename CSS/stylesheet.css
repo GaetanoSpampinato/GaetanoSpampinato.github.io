@@ -111,6 +111,12 @@ nav a:hover {
   border-radius: 5%;
 }
 
+#homePage iframe {
+  width: 600px;
+  height: 450px;
+  border: none;
+}
+
 #overItalië {
   padding: 100px 20px 20px 20px;
   background: rgba(0, 0, 0, 0.8);
@@ -175,6 +181,12 @@ section h2 {
 /*#endregion*/
 
 /*#region volkslied*/
+
+#volkslied iframe {
+  width: 560px;
+  height: 315px;
+  border: none;
+}
 
 #volkslied {
   background-image: url("../img/FolkBackground.jpg");
