@@ -142,12 +142,7 @@ a {
   text-decoration: none;
 }
 
-#flex-container article {
-  transition: all 0.2s ease-in-out;
-  box-shadow: 5px 5px 5px black;
-}
-
-#flex-container article:hover {
+.contain:hover {
   transform: scale(1.1);
 }
 
@@ -158,24 +153,20 @@ section h2 {
   color: whitesmoke;
 }
 
-#flex-container img {
+.contain img {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-#one,
-#two,
-#tree,
-#four,
-#five,
-#six,
-#seven {
+.contain {
   padding-top: 15px;
   background-color: darkolivegreen;
   height: 250px;
   width: 308px;
   margin: 20px;
   border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 5px 5px 5px black;
 }
 
 /*#endregion*/
