@@ -45,7 +45,8 @@ section {
 }
 
 #homePage,
-#volkslied {
+#volkslied,
+#steden {
   background-size: cover;
   background-attachment: fixed;
   padding-top: 5%;
@@ -58,7 +59,6 @@ section {
 #italianFlag {
   margin-right: 20px;
   height: 100%;
-  float: left;
 }
 
 #hoofding {
@@ -67,7 +67,6 @@ section {
 }
 
 nav ul {
-  list-style-type: none;
   background: darkolivegreen;
   padding: 0;
   margin: 0;
@@ -76,7 +75,6 @@ nav ul {
 nav li {
   font-size: 1.5em;
   line-height: 47px;
-  height: 100%;
   text-align: center;
   border-bottom: 3px solid darkred;
   display: inline-block;
@@ -84,7 +82,6 @@ nav li {
 }
 
 nav a {
-  text-decoration: none;
   color: whitesmoke;
   display: block;
   font-weight: bold;
@@ -92,10 +89,6 @@ nav a {
 
 nav li:hover {
   background-color: darkred;
-}
-
-nav a:hover {
-  color: whitesmoke;
 }
 
 /*#endregion*/
@@ -133,8 +126,6 @@ nav a:hover {
 /*#region steden*/
 
 #steden {
-  background-size: cover;
-  background-attachment: fixed;
   background-image: url("../img/StedenBackground.jpg");
 }
 
