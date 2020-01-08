@@ -1,0 +1,5 @@
+backend:
+name: github
+repo: GaetanoSpampinato/GaetanoSpampinato.github.io
+
+media_folder: "img"
