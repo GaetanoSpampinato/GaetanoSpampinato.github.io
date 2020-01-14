@@ -56,7 +56,7 @@ h1 {
 /*#region Home */
 
 #profielFoto {
-  min-width: 400px;
+  min-width: 300px;
   width: 45%;
   border-radius: 20%;
   box-shadow: 0 0 15px 10px #141414;
