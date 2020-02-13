@@ -1,252 +1,322 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("../img/Achtergrond.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  color: #edf0f1;
+  background-color: #fff;
 }
 
 body {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 50px auto 95px;
-  grid-template-areas: "navigatie" "inhoud" "footer";
+  grid-template-rows: 175px auto 75px;
+  grid-template-areas: "heading" "main" "footer";
   margin: 0;
-  padding: 0;
   height: 100vh;
 }
 
 header {
-  grid-area: navigatie;
-  background-color: #24252a;
-  position: fixed;
-  width: 100%;
+  grid-area: heading;
+  background-color: lightblue;
 }
 
 main {
+  grid-area: main;
+  background-color: lightcoral;
   display: flex;
-  grid-area: inhoud;
-  background-color: rgba(255, 255, 255, 0.027);
-  margin: 0 10% 0 10%;
-  padding: 2% 5% 2% 5%;
-  align-content: flex-end;
-  flex-flow: column nowrap;
+  flex-wrap: wrap-reverse;
 }
 
-footer {
-  grid-area: footer;
-  background-color: #24252a;
-}
-
-a {
-  font-weight: 500;
-  font-size: 16px;
-  transition: all 0.3s ease 0s;
-}
-
-a:hover {
-  color: #0088a9;
-}
-
-h1 {
-  margin: 0 0 25px 0;
-  text-align: center;
-}
-
-/*#region Home */
-
-#profielFoto {
-  min-width: 300px;
-  width: 45%;
-  border-radius: 20%;
-  box-shadow: 0 0 15px 10px #141414;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.imgContainer,
-.textContainer {
-  text-align: center;
-}
-
-#flex-container {
-  margin-top: 50px;
+/*#region SponsorsList*/
+#sponsorsArea {
+  overflow: scroll;
+  overflow-x: hidden;
+  max-height: 80.9vh;
   display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  align-content: center;
+  flex-flow: column;
 }
 
-.contain:hover {
-  transform: scale(1.1);
+button {
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
 }
 
-.contain h2 {
-  margin: 0;
-  text-align: center;
-  height: 50px;
+article {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 250px 125px;
+  grid-template-areas: "description sponsorPicture";
+  border-bottom: 1px solid lightgrey;
 }
 
-.contain img {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+article:hover {
+  background-color: rgb(253, 239, 239);
 }
 
 .contain {
-  padding-top: 15px;
-  background-color: #24252a;
-  height: 250px;
-  width: 308px;
-  margin: 20px;
-  margin-bottom: 150px;
-  border-radius: 10px;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 5px 5px 5px black;
+  background-color: #fff;
+  height: 125px;
+  width: 375px;
 }
 
-/*#endregion Home */
-
-/*#region Hobbys */
-
-.smallMarge {
-  margin-bottom: 25px;
+.contain h2 {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-#aquariumFoto {
-  min-width: 300px;
-  width: 35%;
-  border-radius: 20%;
-  box-shadow: 0 0 15px 10px #141414;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.contain p {
+  font-size: 12px;
+  margin: 0;
+  padding: 3px 0 3px 0;
 }
 
-#wowFoto {
-  min-width: 300px;
-  width: 45%;
-  border-radius: 20%;
-  box-shadow: 0 0 15px 10px #141414;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.description {
+  margin: 10px;
+  grid-area: description;
 }
 
-#timeStories {
-  min-width: 300px;
-  width: 85%;
-  border-radius: 20%;
-  box-shadow: 0 0 15px 10px #141414;
-}
-
-#mansionOfMadness {
-  min-width: 300px;
-  width: 100%;
-  border-radius: 20%;
-  box-shadow: 0 0 15px 10px #141414;
-}
-
-#denkPuzzel {
-  min-width: 300px;
-  width: 45%;
-  border-radius: 20%;
-  box-shadow: 0 0 15px 10px #141414;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.contain2 {
-  padding-top: 15px;
-  height: auto;
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-.hobbyImage {
-  margin: 0 50px 0 50px;
-  width: 500px;
-}
-
-.hobbyText1 {
-  width: 700px;
-  padding-top: 40px;
-}
-
-.hobbyText2 {
-  width: 700px;
-  padding-top: 30px;
-}
-
-/*#endregion Hobbys */
-
-/*#region Opleiding */
-#cisco {
-  min-width: 300px;
-  width: 45%;
-  border-radius: 20%;
-  box-shadow: 0 0 15px 10px #141414;
-}
-
-/*#endregion Opleiding */
-
-/*#region Navigatie */
-li,
 a {
-  font-weight: bold;
-  font-size: 16px;
-  color: #edf0f1;
   text-decoration: none;
+  color: black;
 }
 
-header {
+.phoneNumber {
+  margin-top: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+.imageContainer {
+  grid-area: sponsorPicture;
+  background-position: center center;
+  background-size: cover;
+  margin: 10px;
+}
+/*#endregion SponsorsList*/
+
+/*#region Details*/
+#fullDescription {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.75);
+  max-height: 75vh;
+}
+
+#detailHeader {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.nav_links {
-  list-style: none;
+#fullDescription h1 {
+  margin: 0;
 }
 
-.nav_links li {
+/*#region Socialmedia*/
+.socialMedia {
+  padding: 0;
+}
+
+.socialMedia li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
 }
 
-.nav_links li a {
-  transition: all 0.3s ease 0s;
+.socialMedia li:hover {
+  background-color: orangered;
 }
 
-.nav_links li a:hover {
-  color: #0088a9;
+.big {
+  font-size: 30px;
 }
 
-.huidigePagina {
-  color: #0088a9;
+/*#endregion Socialmedia*/
+
+#close {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.2);
 }
 
-/*#endregion Navigatie */
+#close:hover {
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
 
-/*#region Footer */
+#detail .phoneNumber {
+  font-size: 100%;
+}
+
+#omschrijving {
+  padding: 25px 0 25px 0;
+  max-width: 400px;
+  text-align: center;
+}
+
+/*#region Picture Slider*/
+#picSlider {
+  grid-area: picSlider;
+
+  overflow: hidden;
+  max-height: 700px;
+}
+
+/* Slideshow container */
+.carouselPic {
+  min-height: 400px;
+  max-height: 400px;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  max-height: 615px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0px;
+  border-radius: 3px 3px 3px 3px;
+  z-index: 1000;
+}
+
+.prev {
+  left: 0px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.prev:hover,
+.next:hover {
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(242, 242, 242, 0.603);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/*#endregion Picture Slider*/
+/*#endregion Details*/
+
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1% 0 1%;
+  grid-area: footer;
+  background-color: lightblue;
 }
 
-footer p {
-  font-weight: 500;
-  font-size: 16px;
-  transition: all 0.3s ease 0s;
+.fade {
+  animation: fade 0.7s;
 }
 
-footer p:hover {
-  color: #0088a9;
-  cursor: default;
+.fadeIn {
+  animation: fadeIn 0.7s;
 }
 
-#logo {
-  width: 3%;
-  margin: 5px 10px 5px 10px;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/*#endregion Footer */
+@keyframes fade {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1900px) {
+  .carouselPic {
+    min-height: 150px;
+    max-height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #omschrijving {
+    padding: 5px 0 5px 0;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .next {
+    right: -5px;
+    border-radius: 3px 3px 3px 3px;
+    z-index: 1000;
+  }
+
+  .prev {
+    left: -5px;
+    border-radius: 3px 3px 3px 3px;
+  }
+
+  #fullDescription {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 340px;
+    box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.75);
+    max-height: 75vh;
+  }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 1920px) {
+  .carouselPic {
+    min-height: 240px;
+    max-height: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
